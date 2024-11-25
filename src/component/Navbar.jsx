@@ -76,9 +76,9 @@ const Navbar = () => {
                     <li><Link to="/MyProfile" className='text-2xl font-bold'>My-Profile</Link></li>
                     </ul>
                 </div>
-                <div className="navbar-end gap-5">
+                <div className="navbar-end gap-5 ">
                             {user ? (
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center gap-3 mr-11">
                                 <h2 className="text-sm md:text-xl font-semibold">{user.displayName || "User"}</h2>
                                 <img
                                     src={user.photoURL || "default-avatar.png"}

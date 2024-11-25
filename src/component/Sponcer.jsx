@@ -28,7 +28,7 @@ const Sponcer = () => {
                 See all brands
                 </Link>
             </div>
-            <img src="https://cdn.pixabay.com/animation/2023/06/29/06/23/06-23-06-393_256.gif" className='w-[350px] ' alt="" />
+            <img src="https://cdn.pixabay.com/animation/2023/06/29/06/23/06-23-06-393_256.gif" className='w-[250px] md:w-[350px] ' alt="" />
         </div>
 
     </>
