@@ -40,7 +40,7 @@ const Sponcer = () => {
             <button 
                 onClick={() => setLike(!Like)}
                 type="button"
-                className='btn text-2xl  '>
+                className=' text-2xl '>
                 {
                     Like ?  <BiSolidLike /> : <BiLike />
                 }
@@ -51,7 +51,12 @@ const Sponcer = () => {
                     <FaRegCommentDots />
                 </button>
             </form>
-            <p className='bg-emerald-200 text-xl p-3 rounded-xl mt-2'>{comantxt}</p>
+            <div className='flex flex-col items-center gap-1 bg-emerald-200 p-3 rounded-xl mt-2'>
+                <h4 className='text-xl text-sky-400  '>Comants : </h4>
+                <p className=' text-xl '>
+                {comantxt}</p>
+            </div>
+            
         </div>
         <div className='flex flex-col items-center mt-12 mb-4'>
             <h3 className='text-4xl font-bold text-center'>See our all brands</h3>

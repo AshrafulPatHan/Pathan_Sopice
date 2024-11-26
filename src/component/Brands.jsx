@@ -47,8 +47,8 @@ useEffect(()=>{
                                             <div className="modal-box">
                                                 <h3 className="font-bold text-lg">{Brands.product_name}</h3>
                                                 <img src={Brands.img} alt="brand" />
-                                                <p className="py-4">{Brands.price}</p>
-                                                <p className="py-4">{Brands.net_available}</p>
+                                                <p className="py-4">Price: {Brands.price}</p>
+                                                <p className="py-4">Net Product: {Brands.net_available}</p>
                                                 <div className="modal-action">
                                                 <form method="dialog">
                                                     <button className="btn">Close</button>
