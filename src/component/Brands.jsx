@@ -31,9 +31,9 @@ useEffect(()=>{
                             Brands.map( Brands =>(
                                 <div key={Brands._id}  >
                                     <div>
-                                        <div className='flex flex-col items-center gap-2 w-[350px] h-[550px] bg-green-300 ml-2 rounded-2xl p-3'>
-                                            <img src={Brands.brand_logo} alt="Crt" className='w-[350px] h-[300px]  ' />
-                                            <h2 className='text-3xl font-semibold'>{Brands.brand_name}</h2>
+                                        <div className='flex flex-col items-center gap-2 w-[300px] md:w-[350px] h-[550px] bg-green-300 ml-2 rounded-2xl p-3'>
+                                            <img src={Brands.img} alt="Crt" className='w-[350px] h-[300px]  ' />
+                                            <h2 className='text-3xl font-semibold'>{Brands.product_name}</h2>
                                             <p className='text-xl font-semibold'>{Brands.rating}<i className="fa-solid fa-star"
                                             style={{ color: '#c24242' }}></i></p>
                                             <p className='text-xl font-semibold text-center'>
@@ -45,12 +45,10 @@ useEffect(()=>{
                                             <button className="btn" onClick={()=>document.getElementById('my_modal_1').showModal()}>View Coupons</button>
                                             <dialog id="my_modal_1" className="modal">
                                             <div className="modal-box">
-                                                <h3 className="font-bold text-lg">{Brands.brand_name}</h3>
-                                                <img src={Brands.brand_logo} alt="brand" />
-                                                <p className="py-4">{Brands.coupons[0].descriptionP}</p>
-                                                <p className="py-4">{Brands.coupons[0].expiry_date}</p>
-                                                <p className="py-4">{Brands.coupons[0].condition}</p>
-                                                <p className="py-4">{Brands.coupons[0].coupon_code}</p>
+                                                <h3 className="font-bold text-lg">{Brands.product_name}</h3>
+                                                <img src={Brands.img} alt="brand" />
+                                                <p className="py-4">{Brands.price}</p>
+                                                <p className="py-4">{Brands.net_available}</p>
                                                 <div className="modal-action">
                                                 <form method="dialog">
                                                     <button className="btn">Close</button>
@@ -63,7 +61,7 @@ useEffect(()=>{
                                                 ) : (
                                                 <>
                                                        {/* Open the modal using document.getElementById('ID').showModal() method */}
-                                            <button className="btn" onClick={()=>document.getElementById('my_modal_1').showModal()}>View Coupons</button>
+                                            <button className="btn" onClick={()=>document.getElementById('my_modal_1').showModal()}>View Details</button>
                                             <dialog id="my_modal_1" className="modal">
                                             <div className="modal-box">
                                                 <div>
@@ -80,7 +78,7 @@ useEffect(()=>{
                                                 </>
                                             )}
                                             <p className='text-xl font-semibold'>
-                                                {Brands.isSaleOn
+                                                {Brands.available
                                                 ? 'On Sale!'
                                                 : 'Sale is not available'}
                                             </p>
