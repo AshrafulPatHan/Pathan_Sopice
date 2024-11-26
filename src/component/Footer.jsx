@@ -1,15 +1,18 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 
 const Footer = () => {
     return (
     <>
         <div className='bg-slate-800 text-slate-300 flex flex-col items-center gap-4 p-6 '>
-            <h3 className='text-4xl'>Discount PRO</h3>
-            <p>Send email in ashraful...@gmail.com</p>
+            <h3 className='text-4xl'>Pathan Sopice</h3>
+            <p>Send email in ashrafulpathan3927@gmail.com</p>
             <div className='flex flex-col md:flex-row items-center gap-2'>
                 <input type="text" placeholder='Email' className='w-[320px] md:w-[350px]   h-[40px] bg-slate-400 rounded-xl p-6 text-black ' />
-                <button className='btn'><i className="fa-solid fa-paper-plane"></i> send</button>
+                <button className='btn' onClick={()=> toast('Email is send')}>
+                    <i className="fa-solid fa-paper-plane"></i> send
+                </button>
             </div>
             <h4 className='text-2xl text-center'>Meet our socalmedia acounte and follo us</h4>
             <div className='text-5xl flex flex-col md:flex-row items-center gap-2 '>

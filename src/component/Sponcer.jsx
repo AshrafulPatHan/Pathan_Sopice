@@ -1,17 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
 
 
 const Sponcer = () => {
     return (
     <>
-    <h3 className='text-4xl font-bold text-center'>ADDS</h3>
-    <p className='text-xl font-bold text-center'>Sponcer By Jankar mahabob</p>
-        <div className="flex justify-center items-center my-5">
+    <h3 className='text-4xl font-bold text-center'>Sponcer sip</h3>
+    <p className='text-xl font-bold text-center'>Sponcer By Pathan TV</p>
+        <div className="flex justify-center items-center my-3">
             <div className="w-[350px] md:w-[660px] lg:w-[800px] aspect-video bg-gray-200 rounded-lg overflow-hidden">
                 <iframe
                     className="w-full h-full"
-                    src="https://www.youtube.com/embed/4O3AUH010rE?si=WYGPr9kIbV8mUjF7"
+                    src="https://www.youtube.com/embed/pqC793Qf8o0"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -20,15 +22,20 @@ const Sponcer = () => {
                 ></iframe>
             </div>
         </div>
-        <div className='flex flex-col items-center mt-12 mb-10'>
+        <div className='flex flex-col items-center mt-12 mb-4'>
             <h3 className='text-4xl font-bold text-center'>See our all brands</h3>
             <p className='text-xl font-medium text-center'>We have the bast qualaty deele for you </p>
-            <div className='text-center mt-3 mb-5 '>
+            <div className='text-center mt-3 mb-1 '>
                 <Link to='/Brands' className='btn  text-xl font-bold text-center bg-pink-300'>
                 See all brands
                 </Link>
             </div>
-            <img src="https://cdn.pixabay.com/animation/2023/06/29/06/23/06-23-06-393_256.gif" className='w-[250px] md:w-[350px] ' alt="" />
+            <DotLottieReact
+            src="https://lottie.host/942bc108-4037-4d3c-9415-a08b68235414/sO3Ev0OQwC.lottie"
+            loop
+            autoplay
+            className='w-[80%] md:w-[50%]'
+            />
         </div>
 
     </>

@@ -37,9 +37,6 @@ const Bnarslid = () => {
     };
     return (
         <div className="flex flex-col items-center justify-center my-5 px-4">
-            <p className="text-lg font-medium text-center mb-6 text-gray-600">
-                Please help those who dont have the means to stay warm this winter.
-            </p>
             <div className='w-[80%]  ' >
                 <Slider {...settings}>
                     <div className="p-3">
@@ -51,25 +48,23 @@ const Bnarslid = () => {
                     </div>
                     <div className="p-3">
                         <img
-                            src="https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/466748589_1124586842382781_1544157469436914701_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=9Qx1_sRNCG4Q7kNvgFjDw1l&_nc_zt=23&_nc_ht=scontent.fdac135-1.fna&oh=03_Q7cD1QG4JJWeGQhk2KelSmGXYYv4_oqESgSaznHXF-FUJTnwZQ&oe=676C1ECB"
-                            alt="Donation 2"
+                            src="https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/467463454_894503962832106_3868106062009511033_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_ohc=3-mBDO6zJi8Q7kNvgGqKyH9&_nc_zt=23&_nc_ht=scontent.fdac135-1.fna&oh=03_Q7cD1QE7Q-3hA4lticGS9e0OHJI36oppMofW1es7h5kYs5SLAQ&oe=676CD011"
                             className="w-full h-[250px] md:h-[300px] rounded-xl object-cover bg-slate-600"
                         />
                     </div>
                     <div className="p-3">
                         <img
-                            src="https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/462578195_1544805756146071_1071305563721104032_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=kJVrcUfPKTkQ7kNvgFH4cn_&_nc_zt=23&_nc_ht=scontent.fdac135-1.fna&oh=03_Q7cD1QF7qG1Vp-sRR9PjiGGourVm0iUeNTQ9UxaJQxdxM8u-Xw&oe=676BFBC2"
-                            alt="Donation 3"
+                            src="https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/467468879_1078007556987245_3781701311361734593_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_ohc=EeV79owToqMQ7kNvgHfyDBU&_nc_zt=23&_nc_ht=scontent.fdac135-1.fna&oh=03_Q7cD1QHmcgeivYxEyh0Pjd468p3FwejmrkmODQZzMIGMS2v5cg&oe=676CB8CF"
                             className="w-full h-[250px] md:h-[300px] rounded-xl object-cover bg-slate-600"
                         />
                     </div>
                 </Slider>
             </div>
             <Link
-                to="/donate"
+                to="/Brands"
                 className="mt-6 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-lg font-medium shadow-md"
             >
-                Donate Now
+                All Brands
             </Link>
         </div>
     );
