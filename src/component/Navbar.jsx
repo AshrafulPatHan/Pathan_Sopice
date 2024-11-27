@@ -25,8 +25,8 @@ const Navbar = () => {
 
     return (
     <>
-        <div>
-            <div className="navbar bg-base-100 mt-6 ">
+        <div >
+            <div className=" navbar bg-base-100 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -76,21 +76,23 @@ const Navbar = () => {
                     <li><Link to="/MyProfile" className='text-2xl font-bold'>My-Profile</Link></li>
                     </ul>
                 </div>
-                <div className="navbar-end gap-5 ">
+                <div className="navbar-end  ">
                             {user ? (
-                            <div className="flex items-center gap-3 mr-11">
-                                <h2 className="text-sm md:text-xl font-semibold">{user.displayName || "User"}</h2>
-                                <img
-                                    src={user.photoURL || "default-avatar.png"}
-                                    alt="User Avatar"
-                                    className="w-8 md:w-10 h-8 md:h-10 rounded-full"
-                                />
-                                <button onClick={handleLogout} className="btn">Log out</button>
+                            <div >
+                                <div className='flex flex-row items-center gap-0 md:gap-2 '>
+                                    <h2 className="text-sm md:text-xl font-semibold ">{user.displayName || "User"}</h2>
+                                    <img
+                                        src={user.photoURL || "default-avatar.png"}
+                                        alt="User Avatar"
+                                        className="w-8 md:w-10 h-8 md:h-10  rounded-full"
+                                    />
+                                    <button onClick={handleLogout} className="btn">Log out</button>
+                                </div>
                             </div>
                         ) : (
                             <>
                                 <Link to="/Login" className="btn text-sm md:text-xl font-semibold">Login</Link>
-                                <Link to="/Registration" className="btn text-sm md:text-xl font-semibold">Registration</Link>
+                                <Link to="/Registration" className="btn text-sm md:text-xl font-semibold ml-1">Registration</Link>
                             </>
                         )}
                 </div>

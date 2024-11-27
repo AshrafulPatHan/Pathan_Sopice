@@ -6,11 +6,12 @@ import { GoogleAuthProvider, sendPasswordResetEmail, signInWithEmailAndPassword,
 import auth from '../Firebase/firebase.init';
 import { FaEye, FaEyeLowVision } from 'react-icons/fa6';
 import { toast } from 'react-toastify';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const provider = new GoogleAuthProvider();
     const [showpas, setShowPas] = useState(false);
+    const navigate = useNavigate();
     const emailRef = useRef();
 
     const handleLogin = (event) => {
@@ -22,6 +23,7 @@ const Login = () => {
             .then((result) => {
                 console.log("Logged in user:", result.user);
                 toast.success('Login successful');
+                navigate('/');
             })
             .catch((error) => {
                 console.error("Error during login:", error.message);
@@ -34,6 +36,7 @@ const Login = () => {
             .then((result) => {
                 console.log("Google login successful:", result.user);
                 toast.success('Google login successful');
+                navigate('/')
             })
             .catch((error) => {
                 console.error("Error during Google login:", error.message);
@@ -69,10 +72,10 @@ const Login = () => {
                                 src="https://lottie.host/15535bab-5dfb-49d7-a12b-c97a4e5debb3/YzlhON4tI6.lottie"
                                 loop
                                 autoplay
+                                className='w-[300px]  md:w-[600px] lg:[900px] '
                             />
                             <p className="py-6 text-center">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                            quasi. In deleniti eaque aut repudiandae et a id nisi
+                                Login for injoy our all funtion
                             </p>
                         </div>
                         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">

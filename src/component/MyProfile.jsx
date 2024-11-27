@@ -17,7 +17,7 @@ const MyProfile = () => {
                     <h3></h3>
                     <img src="" alt="" />
                     {user ? (
-                            <div className="flex flex-col items-center bg-green-500 w-[80%]  h-[450px] gap-3 ">
+                            <div className="flex flex-col items-center bg-green-500 w-[80%] rounded-2xl  h-[450px] gap-3 ">
                                 <h2 className='font-semibold text-3xl text-center mt-5 '>Wilcome Your Profile</h2>
                                 <h2 className=" font-semibold text-3xl ">{user.displayName || "User"}</h2>
                                 <img

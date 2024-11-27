@@ -4,11 +4,13 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import { AuthContext } from './Autnprobider/Authprobider';
+import { BiLike, BiSolidLike } from 'react-icons/bi';
 
 
 
 const Brands = () => {
     const { user } = useContext(AuthContext);
+
 
     const [Brands,setBrands] = useState([])
 useEffect(()=>{
@@ -37,44 +39,46 @@ useEffect(()=>{
                                             <p className='text-xl font-semibold'>{Brands.rating}<i className="fa-solid fa-star"
                                             style={{ color: '#c24242' }}></i></p>
                                             <p className='text-xl font-semibold text-center'>
-                                                {Brands.description}
+                                                Price:  ${Brands.price}
                                             </p>
+                                            
                                             {user ? (
-                                                <div className="flex items-center gap-3">
-                                                       {/* Open the modal using document.getElementById('ID').showModal() method */}
-                                            <button className="btn" onClick={()=>document.getElementById('my_modal_1').showModal()}>View Coupons</button>
-                                            <dialog id="my_modal_1" className="modal">
-                                            <div className="modal-box">
-                                                <h3 className="font-bold text-lg">{Brands.product_name}</h3>
-                                                <img src={Brands.img} alt="brand" />
-                                                <p className="py-4">Price: {Brands.price}</p>
-                                                <p className="py-4">Net Product: {Brands.net_available}</p>
-                                                <div className="modal-action">
-                                                <form method="dialog">
-                                                    <button className="btn">Close</button>
-                                                </form>
-                                                </div>
+                                            <div className="flex items-center gap-3">
+                                                <button className="btn" onClick={()=>
+                                                document.getElementById('my_modal_1').showModal()}>
+                                                    View Detils
+                                                </button>
+                                                <dialog id="my_modal_1" className="modal">
+                                                    <div className="modal-box">
+                                                        <h3 className="font-bold text-lg">{Brands.product_name}</h3>
+                                                        <img src={Brands.img} alt="brand" />
+                                                        <p className="py-4">Price: {Brands.price}</p>
+                                                        <p className="py-4">Net Product: {Brands.net_available}</p>
+                                                        <div className="modal-action">
+                                                            <form method="dialog">
+                                                                <button className="btn">Close</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </dialog>
+                                                {/* =================== */}
                                             </div>
-                                            </dialog>
-                                            {/* =================== */}
-                                                </div>
                                                 ) : (
                                                 <>
-                                                       {/* Open the modal using document.getElementById('ID').showModal() method */}
-                                            <button className="btn" onClick={()=>document.getElementById('my_modal_1').showModal()}>View Details</button>
-                                            <dialog id="my_modal_1" className="modal">
-                                            <div className="modal-box">
-                                                <div>
-                                                    <h2>Login first</h2>
-                                                </div>
-                                                <div className="modal-action">
-                                                <form method="dialog">
-                                                    <button className="btn">Close</button>
-                                                </form>
-                                                </div>
-                                            </div>
-                                            </dialog>
-                                            {/* =================== */}
+                                                    <button className="btn" onClick={()=>document.getElementById('my_modal_1').showModal()}>View Details</button>
+                                                    <dialog id="my_modal_1" className="modal">
+                                                        <div className="modal-box">
+                                                            <div>
+                                                                <h2>Login first</h2>
+                                                            </div>
+                                                            <div className="modal-action">
+                                                                <form method="dialog">
+                                                                    <button className="btn">Close</button>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </dialog>
+                                                    {/* =================== */}
                                                 </>
                                             )}
                                             <p className='text-xl font-semibold'>

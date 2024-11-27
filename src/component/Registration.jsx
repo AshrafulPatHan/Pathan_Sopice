@@ -7,16 +7,16 @@ import { createUserWithEmailAndPassword, sendEmailVerification, updateProfile } 
 import { FaEye } from 'react-icons/fa';
 import { FaEyeLowVision } from 'react-icons/fa6';
 import { toast } from 'react-toastify';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Registration = () => {
     const [showpas,setshowpas] = useState(false)
-
-
-
+const navigate = useNavigate();
 
 
     const handelRegistra = (event) => {
+        
+
         event.preventDefault();
         
         const name = event.target.name.value;
@@ -31,7 +31,7 @@ const Registration = () => {
             .then((result) => {
                 console.log('User Created:', result.user);
                 toast('Registration is sussesful')
-
+                navigate('/Login');
                 // Updating user's profile with name and photoURL
                 updateProfile(result.user, {
                     displayName: name,
@@ -63,10 +63,10 @@ const Registration = () => {
                                     src="https://lottie.host/f107d7b7-2e9a-463e-9698-8b965b72238f/mPsFMFWlBi.lottie"
                                     loop
                                     autoplay
+                                    className='w-[300px]  md:w-[600px] lg:[900px] '
                                 />
                                 <p className="py-6 text-center">
-                                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                                    quasi. In deleniti eaque aut repudiandae et a id nisi.
+                                    registation for login our wabcite
                                 </p>
                             </div>
                             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">

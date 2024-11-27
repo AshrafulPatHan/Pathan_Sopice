@@ -4,6 +4,7 @@ import Sponcer from './Sponcer';
 import Footer from './Footer';
 import Typing from 'react-typing-effect';
 import Bnarslid from './Bnarslid';
+import HomeContent from './HomeContent';
 
 const Home = () => {
     return (
@@ -25,6 +26,7 @@ const Home = () => {
                     />
                 </p>
                 <Bnarslid />
+                <HomeContent/>
                 <Sponcer />
                 <Footer />
             </div>

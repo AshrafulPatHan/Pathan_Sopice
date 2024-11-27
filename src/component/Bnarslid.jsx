@@ -58,6 +58,12 @@ const Bnarslid = () => {
                             className="w-full h-[250px] md:h-[300px] rounded-xl object-cover bg-slate-600"
                         />
                     </div>
+                    <div className="p-3">
+                        <img
+                            src="https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/462581924_535869366092852_4518490724784162411_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=6gQjHUDiPLwQ7kNvgFQzu0d&_nc_zt=23&_nc_ht=scontent.fdac135-1.fna&oh=03_Q7cD1QFdLWiLrKaDN72qGL-Ck0zy70xAgHaZi4pQThLWVCbIkA&oe=676CEECA"
+                            className="w-full h-[250px] md:h-[300px] rounded-xl object-cover bg-slate-600"
+                        />
+                    </div>
                 </Slider>
             </div>
             <Link
