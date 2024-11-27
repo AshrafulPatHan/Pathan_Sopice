@@ -28,4 +28,5 @@ Explore, shop, and experience the joy of online shopping like never before.
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/AshrafulPatHan/Pathan_Sopice
+```bash
 Live Link https://pathansopice.web.app/
