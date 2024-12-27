@@ -16,12 +16,6 @@ import Authprobider from './component/Autnprobider/Authprobider';
 import MyProfile from './component/MyProfile';
 
 
-
-
-
-
-
-
 function App() {
 
 

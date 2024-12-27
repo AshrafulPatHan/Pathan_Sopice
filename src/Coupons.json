@@ -20,7 +20,7 @@
   {
     "id": 3,
     "img": "https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/462581924_535869366092852_4518490724784162411_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_ohc=6gQjHUDiPLwQ7kNvgFQzu0d&_nc_zt=23&_nc_ht=scontent.fdac135-1.fna&oh=03_Q7cD1QFdLWiLrKaDN72qGL-Ck0zy70xAgHaZi4pQThLWVCbIkA&oe=676CEECA",
-    "product_name": "Larning Tabile",
+    "product_name": "Learning Table",
     "price": 15999.99,
     "available": true,
     "rating": 5.00,
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "img": "https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/462652001_1027108759171419_8298642490612461824_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Vp_pqT0jQ-QQ7kNvgH5WvBu&_nc_zt=23&_nc_ht=scontent.fdac135-1.fna&oh=03_Q7cD1QFMi7gB3g8o5e2s2SzhaAKzXQ-uabYZhfdTWoNli-81SA&oe=676CED9B",
-    "product_name": "Stady Tabile",
+    "product_name": "Steady Table",
     "price": 11999.99,
     "available": true,
     "rating": 4.7,
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "img": "https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/462578195_1544805756146071_1071305563721104032_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=3mTnekiu5d4Q7kNvgHI6vth&_nc_zt=23&_nc_ht=scontent.fdac135-1.fna&oh=03_Q7cD1QHawMw1gjwQnYYvcX9sUbIQc6ESNwyCtV1cXQRA2iUHTw&oe=676D1502",
-    "product_name": "Tabile",
+    "product_name": "Table",
     "price": 17099.99,
     "available": false,
     "rating": 4.2,
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "img": "https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/466748589_1124586842382781_1544157469436914701_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=9Qx1_sRNCG4Q7kNvgFjDw1l&_nc_zt=23&_nc_ht=scontent.fdac135-1.fna&oh=03_Q7cD1QG-DOdt5l9Nq4ognGM_JIMtGC7kY7a3yzeDLr5P5rolLw&oe=676CFFCB",
-    "product_name": "Oll Tabile",
+    "product_name": "Oll Table",
     "price": 15999.99,
     "available": true,
     "rating": 4.5,
